@@ -75,6 +75,7 @@ public class PhoneApp {
 				String search=s.nextLine();
 				    for (int i = 0; i < pList.size(); i++) {
 				        if (pList.get(i).getName().contains(search)) {
+							System.out.print(i + 1+". ");
 				            pList.get(i).showInfo();
 				        }
 				    }
