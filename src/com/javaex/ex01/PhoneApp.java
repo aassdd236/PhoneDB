@@ -39,8 +39,8 @@ public class PhoneApp {
 			switch(num) {
 			case 1:
 				System.out.println("<1.리스트>");
-				for (int i = 0; i < pList.size(); i++) {
-					System.out.print(i + 1+". ");
+				for (int i=0; i<pList.size(); i++) {
+					System.out.print(i+1+". ");
 					pList.get(i).showInfo();
 				}
 				break;
@@ -61,8 +61,8 @@ public class PhoneApp {
 				System.out.println("<3.삭제>");
 				System.out.print(">번호 : ");
 				int a=s.nextInt();
-				for (int i = 0; i < pList.size(); i++) {
-			        if ((i + 1) == a) {
+				for (int i=0; i<pList.size(); i++) {
+			        if ((i+1)==a) {
 			            pList.remove(i);
 			        }
 				}
@@ -73,9 +73,9 @@ public class PhoneApp {
 				System.out.println("<4.검색>");
 				System.out.print(">이름: ");
 				String search=s.nextLine();
-				    for (int i = 0; i < pList.size(); i++) {
+				    for (int i=0; i<pList.size(); i++) {
 				        if (pList.get(i).getName().contains(search)) {
-							System.out.print(i + 1+". ");
+							System.out.print(i+1+". ");
 				            pList.get(i).showInfo();
 				        }
 				    }
